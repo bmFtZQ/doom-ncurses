@@ -114,14 +114,14 @@ void GetKeyBoardInput()
 
         memcpy(previousKeys, currentKeys, sizeof(currentKeys));
 
-        if (keyEventReadPtr != keyEventWritePtr)
-        {
-            printf("Write Ptr: %d, Read Ptr: %d\n", keyEventWritePtr, keyEventReadPtr);
-            for (int i = 0; i < KEY_QUEUE_LENGTH; i++)
-            {
-                printf("%d, ", keyEventsQueue[i]);
-            }
-            putchar('\n');
-        }
+        // if (keyEventReadPtr != keyEventWritePtr)
+        // {
+        //     printf("Write Ptr: %d, Read Ptr: %d\n", keyEventWritePtr, keyEventReadPtr);
+        //     for (int i = 0; i < KEY_QUEUE_LENGTH; i++)
+        //     {
+        //         printf("%d, ", keyEventsQueue[i]);
+        //     }
+        //     putchar('\n');
+        // }
     }
 }
